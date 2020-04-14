@@ -1,0 +1,210 @@
+
+<!doctype html>
+<html>
+  <head>
+    <title>Viajar</title>
+<meta name="description" content="HTML tutorial">
+<meta name="keywords"
+content="HTML,CSS,XML,JavaScript">
+<meta name="author" content="Ana Rita Prior">
+<meta http-equiv="refresh" content="30">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css\mystyle.css">
+  </head>
+
+<!---Content starts here -->
+  <body>
+<header>
+  <a id="menu_icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+<path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z" fill="white"/>
+</svg>
+</a>
+  <div id="drawer">
+      <nav>
+  <a href="#unordered"> O nosso país</a>
+  <a href="#ordered"> Porque o nosso país?</a>
+  <a href="#color"> As nossas viagens recentes</a>
+  <a href="#video"> Video</a>
+  <a href="#table"> Table</a>
+  </nav>
+</div>
+
+    <h1>Viajar por Portugal</h1>
+      <p>Conheça sítios maravilhosos sem sair do nosso país</p>
+      <hr>
+      <h4> Made by Rita P </h4>
+    </header>
+
+    <nav id="tabletPC" class="col-3">
+      <a href="#unordered"> O nosso país</a>
+      <br/>
+      <a href="#ordered"> Porque o nosso país?</a>
+      <br/>
+      <a href="#color"> As nossas viagens recentes</a>
+      <br/>
+      <a href="#video"> Video </a>
+      <br/>
+      <a href="#table"> Tabela</a>
+</nav>
+
+<div id="container" class="col-9">
+  <section class="slideshow-container">
+
+<h2>Slide por paisagens belas</h2>
+<article class="mySlides" class="fade">
+<figure>
+<img src="images/img1.jpg">
+<figcaption>Costa da Caparica</figcaption>
+</figure>
+</article>
+
+<article>
+<article class="mySlides" class="fade">
+<figure>
+<img src="images/img2.jpg">
+<figcaption>Fonte da Telha- Aroeira Beach</figcaption>
+</figure>
+</article>
+
+<article>
+<article class="mySlides" class="fade">
+<figure>
+<img src="images/img3.jpg">
+<figcaption>Baia do Seixal</figcaption>
+</figure>
+
+</article>
+
+<div class="dotpoints">
+<span class="dot"></span>
+<span class="dot"></span>
+<span class="dot"></span>
+</div>
+
+</section>
+
+  <section>
+      <a name="unordered">
+      <h2> O nosso País </h2>
+<p>Portugal é um sitio maravilhoso, cheio de monumentos históricos e sítios únicos que lhe podem proporcionar momentos únicos e maravilhosos com o seu próprio país.
+Não vá mais longe, fique por aqui! Sítios a não perder (o nosso top 5) </p>
+<ul>
+  <li> Porto; </li>
+  <li> Aveiro;</li>
+  <li> Serra da Estrela;</li>
+  <li> Costa da caparica; </li>
+  <li> Algarve.</li>
+</ul>
+</section>
+
+<section>
+<a name="ordered">
+<h2> Porque o nosso País </h2>
+<p> Facil, por estas duas razões!</p>
+<ol>
+<li><u> Razão 1 </u></li>
+<li><u> Razão 2 </u></li>
+</ol>
+</section>
+
+<section>
+<a name="color">
+<h2>As nossas viagens recentes</h2>
+<p> O Belo Porto </p>
+<img src = "https://www.flytap.com/-/media/Flytap/Campaigns/2018/Porto/OPO1920x655.jpg" width="1800" height="auto">
+<img src = "images/image1.png" width="800" height="auto">
+<img src = "images/image2.jpg" width="800" height="auto">
+</section>
+
+<section>
+<a name="video">
+<h2>Video</h2>
+<p> Esta secção mostra alguns sítios maravilhosos que pode visitar </p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Tpm1ACi5KHk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<video width="650" height="480" controls>
+<source src="videos/Virei_vlogger__Vem_passear_comigo_.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</section>
+
+<section>
+<a name="table">
+<h2>Tabela informativa</h2>
+<p> Isto é uma tabela que mostra preços relativos a viagens para um certo destino. </p>
+<table border="1px">
+<th colspan="3"> Heading </th>
+<tr>
+<td> Destino </td> <td> Duração </td> <td> Preço </td>
+</tr>
+<tr>
+<td rowspan="4"> Porto</td>
+<td rowspan="3"> Viagem de avião com duração minima de 45 minutos</td>
+<td> 50€ </td>
+</tr>
+<tr>
+<td> 75€ </td>
+</tr>
+<tr>
+<td> 100€ </td>
+</tr>
+<tr>
+<td> Uber </td> <td> 400€ </td>
+</tr>
+</table>
+</section>
+</div>
+
+<aside class="col-2">
+  <h3>Aside</h3>
+    <p>A sua publicidade poderá estar aqui!</p>
+</aside>
+
+<footer>
+  <h2>Developed by Rita Prior</h2>
+</footer>
+
+<script>
+let slideIndex = 0;
+showSlides();
+function showSlides() {
+let i = null;
+let slides = document.getElementsByClassName("mySlides");
+let dots = document.getElementsByClassName("dot");
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+
+slideIndex++;
+if (slideIndex> slides.length) {slideIndex = 1}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+
+slides[slideIndex-1].style.display = "block";
+dots[slideIndex-1].className += " active";
+setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+
+let menu_icon = document.querySelector("#menu_icon");
+let container = document.querySelector("#container");
+let drawer = document.querySelector("#drawer");
+
+menu_icon.addEventListener("click", function (e) {
+
+drawer.classList.toggle("open");
+e.stopPropagation();
+
+});
+
+container.addEventListener("click", function () {
+drawer.classList.remove("open");
+});
+
+</script>
+
+  </body>
+
+<!---Content ends here -->
+</html>
